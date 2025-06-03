@@ -1,3 +1,15 @@
+console.log('[index.js] TOP OF FILE');
+
+process.on('uncaughtException', (error, origin) => {
+  console.error('[index.js] Uncaught Exception:', error, 'Origin:', origin);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[index.js] Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1);
+});
+
 import http from 'http';
 import url from 'url';
 import './whatsappClient.js'; // Asegúrate que esto exporte 'whatsappClient' o se maneje adecuadamente

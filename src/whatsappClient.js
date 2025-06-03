@@ -1,3 +1,4 @@
+console.log('[whatsappClient.js] TOP OF FILE');
 import pkg from 'whatsapp-web.js';
 const { Client, LocalAuth } = pkg;
 import qrcode from 'qrcode-terminal';
@@ -31,6 +32,7 @@ const removeFileOrDir = (itemPath) => {
   }
 };
 
+console.log('[whatsappClient.js] ENV PUPPETEER_EXECUTABLE_PATH:', process.env.PUPPETEER_EXECUTABLE_PATH);
 const client = new Client({
   authStrategy: new LocalAuth({ 
     clientId: CLIENT_ID,
