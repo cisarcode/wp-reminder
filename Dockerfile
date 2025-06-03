@@ -46,15 +46,14 @@ RUN apt-get update \
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /usr/src/app
 
-# Copia los archivos package.json y package-lock.json (o npm-shrinkwrap.json)
+# Copia los archivos package.json y package-lock.json 
+# (package-lock.json es importante para builds reproducibles)
 COPY package*.json ./
 
 # Instala las dependencias de producción
-# Usamos --omit=dev para no instalar dependencias de desarrollo
-RUN npm ci --omit=dev
+RUN npm install --only=production
 
-# Copia el resto de los archivos de la aplicación al directorio de trabajo
-# Esto incluye tu directorio src, el archivo de credenciales JSON, etc.
+# Copia el resto del código de la aplicación
 COPY . .
 
 # Asegúrate de que el archivo de credenciales sea accesible
@@ -66,5 +65,8 @@ COPY . .
 # Puppeteer (whatsapp-web.js) se ejecutará en modo headless por defecto
 # Los argumentos para puppeteer ya están en tu whatsappClient.js
 
-# Comando para ejecutar la aplicación
+# Expone el puerto que la aplicación usará (informativo, Cloud Run usa el PORT env var)
+EXPOSE 8080
+
+# Comando para correr la aplicación
 CMD ["node", "src/index.js"]
