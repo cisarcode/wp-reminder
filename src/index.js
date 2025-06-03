@@ -6,7 +6,7 @@ import whatsappClient from './whatsappClient.js'; // Cliente de WhatsApp importa
 import { getScheduledJobsDetails } from './jobStore.js';
 import { PubSub } from '@google-cloud/pubsub'; // <--- AÑADIDO: Importar PubSub
 
-const RELOAD_PORT = process.env.RELOAD_PORT || 3001;
+const PORT = process.env.PORT || 3001; // Cloud Run provee PORT, fallback a 3001 para local
 const CALENDAR_PUBSUB_SUBSCRIPTION = 'calendar-events-mu-bot-subscription'; // Nombre de la suscripción por defecto
 
 // Definir projectId y subscriptionName desde variables de entorno con fallbacks
@@ -14,7 +14,7 @@ const projectId = process.env.PUBSUB_PROJECT_ID || 'wp-reminder'; // Tu Project 
 const subscriptionName = process.env.PUBSUB_SUBSCRIPTION_ID || CALENDAR_PUBSUB_SUBSCRIPTION;
 
 // Inicialización del cliente de WhatsApp y carga de eventos
-whatsappClient.on('ready', async () => {
+whatsappClient.on('ready', async () => { // Asegurarse que 'whatsappClient' es el objeto Client correcto
   console.log('WhatsApp listo – cargando eventos…');
   try {
     await loadAll(); // Carga inicial de eventos
@@ -121,8 +121,8 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(RELOAD_PORT, () => {
-  console.log(`Servidor HTTP escuchando en http://localhost:${RELOAD_PORT}`);
+server.listen(PORT, () => {
+  console.log(`Servidor HTTP escuchando en http://localhost:${PORT}`);
   console.log(`  Endpoint para recarga manual: /reload-events`);
   console.log(`  Endpoint para ver trabajos: /scheduled-jobs`);
 });
