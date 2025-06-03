@@ -1,0 +1,240 @@
+[
+  {
+    "title": "🏙️ Lost City (🌏Mundo) en 10 minutos.",
+    "server_reminder_time": ["14:50", "20:20"],
+    "server_event_start_time": ["15:00", "20:30"],
+    "days_of_week": ["MO"],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "👻 Phantom Monastery 🌀 en 10 minutos.",
+    "server_reminder_time": ["18:20", "13:20"],
+    "server_event_start_time": ["18:30", "13:30"],
+    "days_of_week": ["MO", "TU"],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🐉 Invacion Lorencia y Elveland. Lluvia de EXP.",
+    "server_reminder_time": "19:20",
+    "server_event_start_time": "19:30",
+    "days_of_week": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR",
+      "SA",
+      "SU"
+    ],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🔥 Hoguera diaria – Dioses, reúnanse.",
+    "server_reminder_time": "19:50",
+    "server_event_start_time": "20:00",
+    "days_of_week": [
+      "MO",
+      "TU",
+      "WE",
+      "TH",
+      "FR",
+      "SA",
+      "SU"
+    ],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🦋 Demon Realm (🌀Abbys) en 10 minutos.",
+    "server_reminder_time": "20:50",
+    "server_event_start_time": "21:00",
+    "days_of_week": [
+      "MO"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🚩 Abbys Domination 🌀 en 10 minutos.",
+    "server_reminder_time": ["21:20", "21:20"],
+    "server_event_start_time": ["21:30", "21:30"],
+    "days_of_week": ["MO", "FR"],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🌆 Lost City (🌀Abbys) en 10 minutos.",
+    "server_reminder_time": ["14:50", "20:20"],
+    "server_event_start_time": ["15:00", "20:30"],
+    "days_of_week": ["WE"],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🪽 Trial Angel",
+    "server_reminder_time": "12:10",
+    "server_event_start_time": "12:20",
+    "days_of_week": ["MO","TU", "WE", "TH", "FR", "SA", "SU"],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🦋 Lilith 🌀",
+    "server_reminder_time": "17:50",
+    "server_event_start_time": "18:00",
+    "days_of_week": ["MO","TU", "WE", "TH", "FR", "SA", "SU"],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🪩💃🏼 Mu Ball 🌀 en 10 minutos.",
+    "server_reminder_time": "20:20",
+    "server_event_start_time": "20:30",
+    "days_of_week": [
+      "TU"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🏯 Lost Tower (🌏Mundo) en 10 minutos .",
+    "server_reminder_time": "20:50",
+    "server_event_start_time": "21:00",
+    "days_of_week": [
+      "TU"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🛕 Babel 🌀 en 10 minutos.",
+    "server_reminder_time": ["21:20", "21:20"],
+    "server_event_start_time": ["21:30", "21:30"],
+    "days_of_week": ["TU", "TH"],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "💎 I Kubera Mine ⛏️(🌀Primera oportunidad) en 10 minutos",
+    "server_reminder_time": "14:50",
+    "server_event_start_time": "15:00",
+    "days_of_week": [
+      "TH"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "💎 II Kubera Mine ⛏️(🌀Segunda oportunidad) en 10 minutos",
+    "server_reminder_time": "15:50",
+    "server_event_start_time": "16:00",
+    "days_of_week": [
+      "TH"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "💎 III Kubera Mine ⛏️(🌀Ultima oportunidad) en 10 minutos",
+    "server_reminder_time": "18:50",
+    "server_event_start_time": "19:00",
+    "days_of_week": [
+      "TH"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "💰 Treasure Fayrland 🌀 en 10 minutos.",
+    "server_reminder_time": "20:20",
+    "server_event_start_time": "20:30",
+    "days_of_week": [
+      "TH"
+    ],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🏯 Lost Tower (🌀Abbys) en 10 minutos.",
+    "server_reminder_time": "20:50",
+    "server_event_start_time": "21:00",
+    "days_of_week": [
+      "TH"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "⚔️ Dragon Fort (GVG 🌏 Mundo) en 10 minutos.",
+    "server_reminder_time": "20:20",
+    "server_event_start_time": "20:30",
+    "days_of_week": [
+      "FR"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "💧🍃⛰️🔥 Element Fayrland 🌀 en 10 minutos.",
+    "server_reminder_time": "22:20",
+    "server_event_start_time": "22:30",
+    "days_of_week": [
+      "FR"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🥇🥈🥉 3 vs 3 inicia en 10 minutos.",
+    "server_reminder_time": "15:50",
+    "server_event_start_time": "16:00",
+    "days_of_week": [
+      "SA"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "⚔️ Dragon Fort (GVG 🌀 Abbys) en 10 minutos.",
+    "server_reminder_time": "20:20",
+    "server_event_start_time": "20:30",
+    "days_of_week": [
+      "SA"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "🏟️ Mu Stadium.",
+    "server_reminder_time": "13:20",
+    "server_event_start_time": "13:30",
+    "days_of_week": [
+      "SU"
+    ],
+    "duration_minutes": 30,
+    "description": ""
+  },
+  {
+    "title": "🏆 Elemental Competition (🌀Abbys) en 10 minutos.",
+    "server_reminder_time": ["15:50", "22:20"],
+    "server_event_start_time": ["16:00", "22:30"],
+    "days_of_week": [
+      "SU"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  },
+  {
+    "title": "👑 Roland City War (🌏Mundo) en 10 minutos.",
+    "server_reminder_time": "21:20",
+    "server_event_start_time": "21:30",
+    "days_of_week": [
+      "SU"
+    ],
+    "duration_minutes": 30,
+    "description": "[BOLD]"
+  }
+]

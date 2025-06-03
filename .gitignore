@@ -1,0 +1,49 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+.env.*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# WhatsApp Web JS session cache
+.wwebjs_auth/
+
+# Firebase
+.firebase/
+firestore-debug.log
+firebase-debug.log
+
+# Optional npm cache directory
+.npm
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build output
+/dist/
+/build/
+
+# Archivos de resumen o logs específicos
+20250602_221723_resumen.txt
+
+# Misc
+*.tgz
+.idea/
+.vscode/
+*.swp
+
+# Ignore local credentials and secrets
+*.local.js
+*.secret.js
+*.json # Ignorar archivos JSON, especialmente credenciales de servicio de Google

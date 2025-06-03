@@ -1,0 +1,299 @@
+[
+  {
+    "title": "🌏🏙️ Lost City I (Mundo) en 10 minutos.",
+    "days_of_week": ["MO"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "15:00",
+    "server_reminder_time": "14:50",
+    "colorId": "2"
+  },
+  {
+    "title": "🌏🏙️ Lost City II (Mundo) en 10 minutos.",
+    "days_of_week": ["MO"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "2"
+  },
+  {
+    "title": "🌀👻 Phantom Monastery II en 10 minutos.",
+    "days_of_week": ["MO", "TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "18:30",
+    "server_reminder_time": "18:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀👻 Phantom Monastery I en 10 minutos.",
+    "days_of_week": ["MO", "TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "13:30",
+    "server_reminder_time": "13:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🐉 Invacion Lorencia y Elveland. Lluvia de EXP.",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA","SU"],
+    "duration_minutes": 30,
+    "description": "[MONO]",
+    "server_event_start_time": "19:30",
+    "server_reminder_time": "19:20",
+    "colorId": "5"
+  },
+  {
+    "title": "🔥 Hoguera diaria – Dioses, reúnanse.",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA","SU"],
+    "duration_minutes": 30,
+    "description": "[MONO]",
+    "server_event_start_time": "20:00",
+    "server_reminder_time": "19:50",
+    "colorId": "6"
+  },
+  {
+    "title": "🌀🦋 Demon Realm (Abbys) en 10 minutos.",
+    "days_of_week": ["MO"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:00",
+    "server_reminder_time": "20:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🚩 Abbys Domination en 10 minutos.",
+    "days_of_week": ["MO", "FR"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:30",
+    "server_reminder_time": "21:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🌆 Lost City I (Abbys) en 10 minutos.",
+    "days_of_week": ["WE"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "15:00",
+    "server_reminder_time": "14:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🌆 Lost City II (Abbys) en 10 minutos.",
+    "days_of_week": ["WE"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🪽 Trial Angel",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA","SU"],
+    "duration_minutes": 30,
+    "description": "[MONO]",
+    "server_event_start_time": "12:20",
+    "server_reminder_time": "12:10",
+    "colorId": "10"
+  },
+  {
+    "title": "🌀🦋 Lilith",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA","SU"],
+    "duration_minutes": 30,
+    "description": "[MONO]",
+    "server_event_start_time": "18:00",
+    "server_reminder_time": "17:50",
+    "colorId": "7"
+  },
+  {
+    "title": "🌀💃🏼 Mu Ball 🪩 en 10 minutos.",
+    "days_of_week": ["TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌏🏯 Lost Tower (Mundo) en 10 minutos .",
+    "days_of_week": ["TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:00",
+    "server_reminder_time": "20:50",
+    "colorId": "2"
+  },
+  {
+    "title": "🌀🛕 Babel en 10 minutos.",
+    "days_of_week": ["TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:30",
+    "server_reminder_time": "21:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🛕 Babel en 10 minutos.",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:30",
+    "server_reminder_time": "21:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀💎 Kubera Mine I en 10 minutos",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "15:00",
+    "server_reminder_time": "14:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀💎 Kubera Mine II en 10 minutos",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "16:00",
+    "server_reminder_time": "15:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀💎 Kubera Mine III en 10 minutos",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "19:00",
+    "server_reminder_time": "18:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀💰 Treasure Fayrland en 10 minutos.",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🏯 Lost Tower (Abbys) en 10 minutos.",
+    "days_of_week": ["TH"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:00",
+    "server_reminder_time": "20:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌏🏰 Dragon Fort 💣(GVG ⚔️ Mundo) en 10 minutos.",
+    "days_of_week": ["FR"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "2"
+  },
+  {
+    "title": "🌀💧🍃⛰️🔥 Element Fayrland en 10 minutos.",
+    "days_of_week": ["FR"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "22:30",
+    "server_reminder_time": "22:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🥇🥈🥉 3 vs 3 inicia en 10 minutos.",
+    "days_of_week": ["SA"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "16:00",
+    "server_reminder_time": "15:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🏰 Dragon Fort 💣(GVG ⚔️ Abbys) en 10 minutos.",
+    "days_of_week": ["SA"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:30",
+    "server_reminder_time": "20:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🏟️ Mu Stadium.",
+    "days_of_week": ["SU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "13:30",
+    "server_reminder_time": "13:20",
+    "colorId": "5"
+  },
+  {
+    "title": "🌀🏆 Elemental Competition I (Abbys) en 10 minutos.",
+    "days_of_week": ["SU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "16:00",
+    "server_reminder_time": "15:50",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀🏆 Elemental Competition II (Abbys) en 10 minutos.",
+    "days_of_week": ["SU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "22:30",
+    "server_reminder_time": "22:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌀👑 Roland City War (Abbys) en 10 minutos.",
+    "days_of_week": ["WE"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:30",
+    "server_reminder_time": "21:20",
+    "colorId": "9"
+  },
+  {
+    "title": "🌏👑 Roland City War (Mundo) en 10 minutos.",
+    "days_of_week": ["SU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "21:30",
+    "server_reminder_time": "21:20",
+    "colorId": "2"
+  },
+  {
+    "title": "🌏🍺 Banquete 🍖 (Mundo) en 10 minutos.",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:20",
+    "server_reminder_time": "20:20",
+    "colorId": "10"
+  },
+  {
+    "title": "🌀🍺 Banquete 🍖 (Abbys) en 10 minutos.",
+    "days_of_week": ["TH","FR","SA","SU","MO","TU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "20:25",
+    "server_reminder_time": "20:25",
+    "colorId": "7"
+  },
+  {
+    "title": "🏞️ Land of Trial en 10 minutos.",
+    "days_of_week": ["MO","TU","WE","TH","FR","SA","SU"],
+    "duration_minutes": 30,
+    "description": "",
+    "server_event_start_time": "23:30",
+    "server_reminder_time": "23:20",
+    "colorId": "5"
+  }
+]

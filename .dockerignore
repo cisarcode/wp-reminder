@@ -1,0 +1,14 @@
+node_modules
+.git
+.gitignore
+Dockerfile
+.dockerignore
+*.log
+npm-debug.log*
+.DS_Store
+
+# La carpeta de sesión de WhatsApp. Se manejará de forma diferente en Cloud Run para persistencia.
+.wwebjs_auth/
+
+# Archivos de configuración local que no deben ir en la imagen si se manejan por variables de entorno
+# .env # Las variables de .env se configurarán directamente en Cloud Run

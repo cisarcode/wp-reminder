@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-reminder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "calendar:test": "node src/calendarTest.js",
+    "calendar:reconnect": "node src/calendarReconnect.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "uuid": "^9.0.0",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^149.0.0",
+    "node-schedule": "^2.1.1",
+    "puppeteer": "^22.8.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "1.29.0",
+    "@google-cloud/pubsub": "^4.0.0"
+  }
+}
