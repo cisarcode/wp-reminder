@@ -32,9 +32,9 @@ const removeFileOrDir = (itemPath) => {
 };
 
 const client = new Client({
-  authStrategy: new LocalAuth({
+  authStrategy: new LocalAuth({ 
     clientId: CLIENT_ID,
-    dataPath: SESSION_FILE_PATH
+    dataPath: '/tmp/wwebjs_auth'
   }),
   puppeteer: {
       headless: true, // Set to false to see the browser window
