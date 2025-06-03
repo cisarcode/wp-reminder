@@ -16,9 +16,10 @@ import './whatsappClient.js'; // Asegúrate que esto exporte 'whatsappClient' o 
 import { loadAll } from './bulkLoader.js';
 import whatsappClient from './whatsappClient.js'; // Cliente de WhatsApp importado
 import { getScheduledJobsDetails } from './jobStore.js';
-import { PubSub } from '@google-cloud/pubsub'; // <--- AÑADIDO: Importar PubSub
+import { PubSub } from '@google-cloud/pubsub';
+import { startHealthServer } from './healthServer.js';
 
-const PORT = process.env.PORT || 3001; // Cloud Run provee PORT, fallback a 3001 para local
+
 const CALENDAR_PUBSUB_SUBSCRIPTION = 'calendar-events-mu-bot-subscription'; // Nombre de la suscripción por defecto
 
 // Definir projectId y subscriptionName desde variables de entorno con fallbacks
@@ -97,52 +98,5 @@ setInterval(async () => {
   }
 }, 21600000); // 6 horas = 21,600,000 ms
 
-console.log('Intentando iniciar servidor HTTP para recarga manual y estado de jobs...');
-// Servidor HTTP para recarga manual y visualización de trabajos programados
-const server = http.createServer(async (req, res) => {
-  const parsedUrl = url.parse(req.url, true);
-  res.setHeader('Content-Type', 'application/json'); // Establecer Content-Type para todas las respuestas
-
-  if (req.method === 'GET' && parsedUrl.pathname === '/reload-events') {
-    console.log('Solicitud de recarga manual de eventos recibida...');
-    try {
-      await loadAll();
-      res.writeHead(200);
-      res.end(JSON.stringify({ message: 'Recarga de eventos completada. Revisa los logs del bot.' }));
-      console.log('Recarga manual de eventos finalizada exitosamente.');
-    } catch (error) {
-      console.error('Error durante la recarga manual de eventos:', error);
-      res.writeHead(500);
-      res.end(JSON.stringify({ message: 'Error durante la recarga de eventos.', error: error.message }));
-    }
-  } else if (req.method === 'GET' && parsedUrl.pathname === '/scheduled-jobs') {
-    console.log('Solicitud de lista de trabajos programados recibida...');
-    try {
-      const jobs = getScheduledJobsDetails(); // Asumiendo que esta función devuelve un array de detalles de trabajos
-      res.writeHead(200);
-      res.end(JSON.stringify({ count: jobs.length, jobs: jobs }));
-      console.log('Lista de trabajos programados enviada exitosamente.');
-    } catch (error) {
-      console.error('Error al obtener la lista de trabajos programados:', error);
-      res.writeHead(500);
-      res.end(JSON.stringify({ message: 'Error al obtener la lista de trabajos programados.', error: error.message }));
-    }
-  } else {
-    res.writeHead(404);
-    res.end(JSON.stringify({ message: 'Endpoint no encontrado.' }));
-  }
-});
-
-server.listen(PORT, () => {
-  console.log(`Servidor HTTP escuchando en http://localhost:${PORT}`);
-  console.log(`  Endpoint para recarga manual: /reload-events`);
-  console.log(`  Endpoint para ver trabajos: /scheduled-jobs`);
-});
-
-server.on('error', (error) => {
-  console.error('Error en el servidor HTTP:', error);
-  if (error.code === 'EADDRINUSE') {
-    console.error(`Puerto ${RELOAD_PORT} ya está en uso. Los endpoints HTTP no estarán disponibles.`);
-    console.error('Si los necesitas, detén el proceso que usa ese puerto o cambia RELOAD_PORT en .env');
-  }
-});
+console.log('Iniciando servidor de salud...');
+startHealthServer();
