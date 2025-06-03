@@ -43,6 +43,15 @@ RUN apt-get update \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
+# Comandos de diagnóstico para Chromium
+RUN echo "Buscando chromium en /usr/bin/..."
+RUN ls -l /usr/bin/chrom* 
+RUN echo "Intentando obtener la versión de chromium-browser..."
+RUN chromium-browser --version || echo "chromium-browser --version falló"
+RUN echo "Intentando obtener la versión de chromium (alternativo)..."
+RUN chromium --version || echo "chromium --version falló"
+RUN echo "Fin de los diagnósticos de Chromium."
+
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /usr/src/app
 
