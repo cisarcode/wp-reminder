@@ -43,15 +43,25 @@ const client = new Client({
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--no-first-run',
-        '--no-zygote',
-        // '--single-process', // Single-process mode (not recommended for stability)
-        '--disable-gpu'
+        '--disable-gpu',
+        '--disable-dev-shm-usage', // Evita problemas con /dev/shm limitado en Cloud Run
+        '--no-zygote', // A veces útil en contenedores
+        '--single-process', // Puede ayudar en entornos restringidos
+        '--no-first-run', // Evita la configuración de primera ejecución
+        '--disable-extensions', // Deshabilita extensiones
+        '--disable-sync', // Deshabilita la sincronización
+        '--disable-default-apps', // Deshabilita aplicaciones por defecto
+        '--disable-translate', // Deshabilita la traducción
+        '--disable-background-networking', // Deshabilita la red en segundo plano
+        '--disable-component-extensions-with-background-pages',
+        '--disable-client-side-phishing-detection',
+        '--disable-features=site-per-process,TranslateUI,BlinkGenPropertyTrees',
+        '--enable-features=NetworkService,NetworkServiceInProcess',
+        '--metrics-recording-only', // No enviar datos de usuario
+        '--mute-audio' // Silenciar audio
       ],
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath(),
-      dumpio: true,
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH, // Ahora confiamos en la ENV var del Dockerfile
+      dumpio: true // Mantenemos esto para logs detallados de Chromium
     },
     // Increase timeout for WhatsApp Web to load, especially on slower connections or first run
     // Default is 60000 (60 seconds)

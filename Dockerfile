@@ -56,6 +56,9 @@ RUN npm install --only=production
 # Copia el resto del código de la aplicación
 COPY . .
 
+# Establece la ruta al ejecutable de Chromium para Puppeteer
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
 # Asegúrate de que el archivo de credenciales sea accesible
 # El nombre exacto del archivo JSON de credenciales debe estar en GOOGLE_APPLICATION_CREDENTIALS
 # Ejemplo: ENV GOOGLE_APPLICATION_CREDENTIALS=./wp-reminder-xxxxxxxxxxxx.json
