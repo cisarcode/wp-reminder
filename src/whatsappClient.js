@@ -48,7 +48,8 @@ const client = new Client({
         // '--single-process', // Single-process mode (not recommended for stability)
         '--disable-gpu'
       ],
-      executablePath: puppeteer.executablePath(),
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath(),
+      dumpio: true,
     },
     // Increase timeout for WhatsApp Web to load, especially on slower connections or first run
     // Default is 60000 (60 seconds)
